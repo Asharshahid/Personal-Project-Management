@@ -1,0 +1,94 @@
+:root{
+    --navColor:rgb(46,43,43);
+    --navLightColor:rgba(70, 67, 67, 0.825);
+    --black:rgb(57, 57, 57);
+    --lightRed:lightcoral;
+    --lightRedLess:rgba(249, 126, 126, 0.999);
+    --lightgreen:lightgreen;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color:var(--lightRed);
+    font-size:30px
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    position:sticky;
+    top: 0px;
+    padding: 5px 20px;
+    height:70px;
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0.744);
+    box-shadow: 1px 1px 10px rgb(207, 206, 206);
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+li a{
+    padding:8px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Varela';
+    color: rgb(87, 87, 87);
+}
+li a:hover{
+    background-color: var(--lightRed);
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.menu-btn i{
+    display: none;
+}
+input{display: none;}
+
+
+/* RESPONSIVE NAVBAR _________________________________ */
+
+@media screen and (max-width:700px) {
+    nav{
+        justify-content: space-between;
+        padding: 5px 30px;
+    }
+    ul{
+        padding: 10px 0;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: -120%;
+        width: 100%;
+        height: 480px;
+        background-color: var(--lightRedLess);
+        justify-content: center;
+        transition: all 0.4s ease-out;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    li{
+        margin: 15px 0;
+        text-align: center;
+    }
+    .menu-btn i{
+        display: block;
+        font-size: 30px;
+        color: var(--lightRed);
+    }
+    label i{
+        cursor: pointer;
+    }
+    li a:hover{
+        background-color: white;
+        color: var(--black);
+        border-radius: 5px;
+        transition: 1s;
+    }
+}

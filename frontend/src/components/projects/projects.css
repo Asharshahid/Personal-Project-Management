@@ -1,0 +1,60 @@
+.mainProjectDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.mainProjectDiv .sortingBtnDiv{
+    display: flex;
+    justify-content: space-around;
+}
+.mainProjectDiv .sortingBtnDiv .searchProjectByName{
+    display: flex;
+    align-items: center;
+}
+.mainProjectDiv .sortingBtnDiv .btn{
+    margin: 10px;
+    padding:8px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Varela';
+    box-shadow: 1px 1px 5px rgb(157, 156, 156);
+    background-color: white;
+    color: rgb(87, 87, 87);
+}
+.mainProjectDiv .sortingBtnDiv .btn:hover{
+    background-color: var(--lightRed);
+    color: white;
+    border-radius: 3px;
+    transition: 1s;
+}
+.mainProjectDiv .searchProjectByName{
+    background-color: white;
+    display: flex;
+}
+.mainProjectDiv .searchProjectByName .search-input{
+    width: 230px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+    padding-left: 10px;
+    outline: none;
+}
+.mainProjectDiv .searchProjectByName .search-button{
+    padding: 5px 15px;
+    background-color: var(--lightRed);
+    border: none;
+    font-size:20px;
+    border-radius: 9px;
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.projects{
+    flex: 9;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

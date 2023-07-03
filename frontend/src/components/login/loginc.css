@@ -1,0 +1,86 @@
+
+.mainUsername{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+
+}
+.mainUser{
+    border-radius: 10px;
+    min-height: 400px;
+    box-shadow: 1px 1px 5px rgb(160, 160, 160);
+    padding: 0px 15px;
+}
+.userSection1,.userSection2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.userSection2{
+    margin: 30px 10px;
+}
+.userSection1 h1{
+    margin: 10px;
+    font-size: 25px;
+}
+.inputSection{
+    display: flex;
+    flex-direction: column;
+}
+.inputSection span{
+    font-size: 20px;
+}
+.inputSection input{
+    display: flex;
+    align-self: center;
+    width: 100%;
+    font-size: 16px;
+    height: 35px;
+    border-radius:10px ;
+    padding-left: 15px;
+    margin: 10px 0;
+    border: 0px solid black;
+    box-shadow:1px 1px 10px rgb(175, 175, 175);
+    outline: none;
+}
+.letgoButton{
+   width: 85%;
+   margin:10px;
+   display: flex;
+   justify-content: center;
+}
+.letgoButton button{
+   width: 100%;
+   height: 35px;
+   border: none;
+   background-color: rgb(255, 255, 255);
+   color: rgb(46, 46, 46);
+   cursor: pointer;
+   box-shadow:1px 1px 10px rgb(175, 175, 175);
+   border-radius: 10px;
+   font-size: 16px;
+}
+.letgoButton button:hover{
+    background-color: var(--lightRed);
+    color: white;
+    transition: 1s;
+}
+
+.registerButtonSection{
+    display: flex;
+    justify-content: flex-start;
+    justify-self: flex-start;
+}
+.registerButtonSection .button{
+    color: blue;
+    margin: 0 5px;
+}
+.userSection2 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid black;
+}

@@ -1,0 +1,71 @@
+:root{
+    --navColor:rgb(46,43,43);
+    --lightBlackColor:rgba(112, 110, 110, 0.825);
+    --black:rgb(67, 67, 67);
+    --lightRed:lightcoral;
+    --lightRedLess:rgba(249, 126, 126, 0.668);
+    --lightgreen:lightgreen;
+}
+.project{
+    min-height: 500px;
+    margin: 20px 10px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: .2px .2px 10px rgb(190, 190, 190);
+}
+.project img{
+    width: 100%;
+    min-height: 250px;
+    max-height: 300px;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px;
+}
+
+.projectInfo .projectStatusAndDate{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 25px;
+    color: var(--black);
+}
+.projectInfo .projectName{
+    margin: 8px;
+}
+.projectInfo .projectName h3{
+    text-align: center;
+}
+.projectInfo .threeButton{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.projectInfo .threeButton .btn{
+    color: var(--black);
+    min-width: 120px;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color:white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Varela';
+    box-shadow: 2px 2px 5px rgb(149, 138, 138);
+}
+.projectInfo .threeButton .editBtn{
+    text-decoration: none;
+    text-align: center;
+}
+.projectInfo .threeButton .btn:hover{
+    min-width: 120px;
+    background-color: var(--lightgreen);
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+.projectInfo .threeButton .editBtn:hover{
+    background-color: var(--lightRed);
+}
+.projectInfo .descDiv{
+    margin: 0 10px;
+    color: var(--black);
+}

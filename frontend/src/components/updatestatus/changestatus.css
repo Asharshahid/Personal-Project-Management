@@ -1,0 +1,72 @@
+:root{
+    --navColor:rgb(46,43,43);
+    --lightBlackColor:rgba(112, 110, 110, 0.825);
+    --black:rgb(67, 67, 67);
+    --lightRed:lightcoral;
+    --lightRedLess:rgba(249, 126, 126, 0.668);
+    --lightgreen:lightgreen;
+}
+.mainDivStatusUpdate{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.statusButton{
+    color: var(--black);
+    min-width: 120px;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color:white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Varela';
+    box-shadow: 2px 2px 5px rgb(149, 138, 138);
+  }
+.statusButton:hover{
+    min-width: 120px;
+    background-color: var(--lightgreen);
+    color: white;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+  
+  .statusButton.active {
+    color: white;
+    min-width: 120px;
+    padding: 4px 8px;
+    margin: 5px;
+    background-color:var(--lightRed);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Varela';
+    box-shadow: 2px 2px 5px rgb(149, 138, 138);
+  }
+  
+  .changeStatusButton {
+    color: white;
+    min-width: 120px;
+    padding: 7px 15px;
+    margin: 5px;
+    background-color:var(--lightgreen);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Varela';
+    box-shadow: 2px 2px 5px rgb(149, 138, 138);
+  }
+  .changeStatusButton:hover{
+    background-color:var(--lightRedLess);
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+  }
+
+  
+  .changeStatusButton:disabled {
+    background-color: #eaeaea;
+    cursor: not-allowed;
+  }

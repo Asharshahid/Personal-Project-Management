@@ -1,0 +1,80 @@
+:root{
+    --navColor:rgb(46,43,43);
+    --navLightColor:rgb(70, 67, 67);
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color:white;
+    font-size:30px
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 20px;
+    height:70px;
+    background-color: var(--navColor);
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+li a{
+    padding:5px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+li a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.menu-btn i{
+    display: none;
+}
+input{display: none;}
+
+
+/* RESPONSIVE NAVBAR _________________________________ */
+
+@media screen and (max-width:700px) {
+    nav{
+        justify-content: space-between;
+        padding: 5px 30px;
+    }
+    ul{
+        padding: 10px 0;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: -120%;
+        width: 100%;
+        height: 320px;
+        background-color: var(--navLightColor);
+        justify-content: center;
+        transition: all 0.4s ease-out;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    li{
+        margin: 20px 0;
+        text-align: center;
+    }
+    .menu-btn i{
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    label i{
+        cursor: pointer;
+    }
+}
